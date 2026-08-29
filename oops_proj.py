@@ -4,7 +4,7 @@
 class chatbook:
     #Constructor to define data/attributes
     def __init__(self):
-        self.username = " "
+        self.email = " "
         self.password = " "
         self.loggedIn = False
         self.menu()
@@ -33,5 +33,35 @@ class chatbook:
         else:
             print("Invalid input! Please try again.")
             self.menu()
+
+    #Method to sign up
+    def signUp(self):
+        email = input("Enter your email: ")
+        password = input("Enter your password: ")
+        self.email = email
+        self.password = password
+        print("Sign Up successful! Please type 2 to login...")
+        print("/n")
+        self.menu()
+
+    #Method to login
+    def login(self):
+        if self.email == " " and self.password == " " :
+            print("Kindly create your account first! Type 1 to create your account.")
+            print("/n")
+            self.menu()
+        else:
+            email = input("Enter your email: ")
+            password = input("Enter your password: ")
+
+            if email == self.email and password == self.password:
+                print("Logged In Successfully!")
+                self.loggedIn = True
+            else:
+                print("Wrong email or password! Type 2 to login again.")
+                print("/n")
+                self.menu()
+
+        
 
 obj = chatbook()
