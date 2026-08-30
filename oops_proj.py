@@ -18,7 +18,8 @@ class chatbook:
                     3. Upload a Post
                     4. Message a Friend
                     5. Exit
-                    """)
+
+                    -> """)
 
         if(inp == "1"):
             self.signUp()
@@ -27,7 +28,7 @@ class chatbook:
         elif(inp == "3"):
             self.uploadPost()
         elif(inp == "4"):
-            self.messageFriend()
+            self.sendMessage()
         elif(inp == "5"):
             exit()
         else:
@@ -77,6 +78,22 @@ class chatbook:
                 print("Post uploaded successfully!")
             else:
                 print("Invalid choice.")
+
+    #Method to send message
+    def sendMessage(self):
+        if not self.loggedIn:
+            print("Kindly log in first!")
+            print("\n")
+            self.menu()
+        else:
+            frnd = input("Enter friend name: ")
+            msg = input("Enter your message: ")
+
+            print(f"Message sent to {frnd}!")
+
+
+
+            
 
             
 
