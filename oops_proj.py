@@ -40,27 +40,28 @@ class chatbook:
         password = input("Enter your password: ")
         self.email = email
         self.password = password
-        print("Sign Up successful! Please type 2 to login...")
-        print("/n")
+        print("Signed Up successfully! Please type 2 to login...")
+        print("\n")
         self.menu()
 
     #Method to login
     def login(self):
         if self.email == " " and self.password == " " :
             print("Kindly create your account first! Type 1 to create your account.")
-            print("/n")
-            self.menu()
         else:
             email = input("Enter your email: ")
             password = input("Enter your password: ")
 
             if email == self.email and password == self.password:
-                print("Logged In Successfully!")
+                print("Logged In Successfully! Choose 3 to upload a post or 4 to message a friend.")
                 self.loggedIn = True
             else:
                 print("Wrong email or password! Type 2 to login again.")
-                print("/n")
-                self.menu()
+
+        print("\n")
+        self.menu()
+
+    #Method to
 
         
 
