@@ -61,7 +61,25 @@ class chatbook:
         print("\n")
         self.menu()
 
-    #Method to
+    #Method to upload post
+    def uploadPost(self):
+        if not self.loggedIn:
+            print("Kindly log in first!")
+            print("\n")
+            self.menu()
+        else:
+            title = input("Enter your post title: ")
+            body = input("Enter your post body: ")
+
+            choice = input("Type 'Y' to upload this post: ")
+
+            if choice == 'Y':
+                print("Post uploaded successfully!")
+            else:
+                print("Invalid choice.")
+
+            
+
 
         
 
