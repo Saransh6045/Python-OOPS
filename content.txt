@@ -1,6 +1,7 @@
-1. Class,  Object, Data/Attributes, Methods
+1. Class, Object, Data/Attributes, Methods
 2. Code Walkthorugh: Attributes get called themselves, while we have to call methods manually
 3. Why Python is called OOP?
 4. Advantages of OOPS
-5. Creating an OOPS project
-6. 
+5. Creating an end-to-end OOPS project
+6. Funtion v/s Method
+7. 
