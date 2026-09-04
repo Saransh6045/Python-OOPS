@@ -16,6 +16,8 @@ class Student:
 
 #Creating an object of the class
 student = Student()
+student.country = "India"
+print(student.country)
 
 #Running the method manually
-student.displayPercentage(100)
+#student.displayPercentage(100)
