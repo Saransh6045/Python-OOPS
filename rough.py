@@ -6,5 +6,8 @@ print(a)
 #method
 from oops_proj import chatbook
 st = chatbook()
-st.sendMessage()
+print(st.getName())
+st.setName("Rajat")
+
+print(st.getName())
 

@@ -4,10 +4,19 @@
 class chatbook:
     #Constructor to define data/attributes
     def __init__(self):
+        self.__name = "Saransh"
         self.email = " "
         self.password = " "
         self.loggedIn = False
-        self.menu()
+        #self.menu()
+
+    #Getter
+    def getName(self):
+        return self.__name
+
+    #Setter
+    def setName(self, value):
+        self.__name = value
 
     #Method to display the menu
     def menu(self):
@@ -89,15 +98,6 @@ class chatbook:
             frnd = input("Enter friend name: ")
             msg = input("Enter your message: ")
 
-            print(f"Message sent to {frnd}!")
-
-
-
-            
-
-            
-
-
-        
+            print(f"Message sent to {frnd}!") 
 
 obj = chatbook()

@@ -6,4 +6,7 @@
 6. Funtion v/s Method
 7. Dunder methods
 8. Self keyword
-9. 
+9. Creating attributes outside Class
+10. Encapsulation
+11. Getter/Setter
+12. Static Method
