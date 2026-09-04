@@ -2,8 +2,13 @@
 
 #Creating a class
 class chatbook:
+
+    __userId = 1
+
     #Constructor to define data/attributes
     def __init__(self):
+        self.id = chatbook.__userId
+        chatbook.__userId += 1
         self.__name = "Saransh"
         self.email = " "
         self.password = " "
@@ -17,6 +22,14 @@ class chatbook:
     #Setter
     def setName(self, value):
         self.__name = value
+
+    @staticmethod
+    def getUserId():
+        return chatbook.__userId
+
+    @staticmethod
+    def setUserId(val):
+        chatbook.__userId = val
 
     #Method to display the menu
     def menu(self):
